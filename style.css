@@ -1,0 +1,321 @@
+/* *** Main Body *** */
+body {
+	margin:					0;
+	background-color: 		lightslategray;
+	background-image: 		url("https://vmcink.files.wordpress.com/2017/01/galaxy.jpg");
+	background-position: 	center;
+	background-attachment:	fixed;
+	color: 					dimgray;
+	font-family: 			Georgia, Times, "Times New Roman", serif; 
+	font-size:				1em;
+	line-height: 			1.5em;
+}
+.wrapper {
+	width: 					960px;
+	margin: 				1em auto;
+	border: 				2px solid black;
+	background-color: 		white;
+}
+
+/* *** Header *** */
+header {
+	height: 				5em;
+	background: 			linear-gradient(to top, rgba(255,255,255,0.75) 0%, rgba(255,255,255,0.75) 100%), url("https://vmcink.files.wordpress.com/2016/10/squirrelgirl.png") repeat 0 -190px;
+}
+header h1 {
+	width: 					100%;
+	height:					1.5em;
+	margin: 				0;
+	padding-top: 			1em;
+	color: 					orangered;
+	font-family: 			Righteous, Helvetica, Arial, sans-serif;
+	text-shadow: 			2px 2px black;
+	text-align: 			center;
+}
+
+/* *** NavBar *** */
+nav, footer {
+	clear: 					both;
+	height: 				2em;
+	background-color: 		steelblue;
+	color: 					white;
+	text-align: 			center;
+}
+nav ul {
+	margin: 				0;
+	padding: 				0.25em 0;
+}
+nav li {
+	display: 				inline;
+	border-right:			2px solid midnightblue;
+	padding-left: 			1em;
+	padding-right:			1em;
+}
+nav li a {
+	padding: 		 		0.5em;
+	color: 			 		white;
+	text-decoration: 		none;
+}
+nav li a:hover, nav li a.aOn {
+	background-color: 		white;
+	border-top-left-radius: 5px;
+	border-top-right-radius:5px;
+	box-shadow: 			1px -1px 1px rgba(0, 0, 0, 0.25);
+	color: 					#666;
+}
+
+/* *** Section *** */
+section.blog {
+	float: 					left;
+	width: 					70%;
+	border-right: 			1px solid steelblue;
+	padding-right:			1em;
+}
+
+section .h2Top {
+	margin: 				1.5em 0 0 0.75em;
+	font-family:			Lobster, Times, "Times New Roman", serif;
+	font-size: 				2em;
+}
+
+/* *** Article *** */
+article {
+	clear: 					both;
+	width: 					100%;
+} 
+article hgroup {
+	margin-top: 			1.5em;
+}
+article p:first-letter {
+	float: 					left;
+	padding: 				5px 5px 0 0;
+	color: 					midnightblue;
+	font-size: 				3em;
+	font-weight: 			bold;
+}
+article a {
+	color: 					orangered;
+}
+article a:hover {
+	background-color: 		antiquewhite;
+	color: 					midnightblue;
+}
+article figure {
+	float: 					left;
+	width: 					290px;
+	margin: 				1em;
+	margin-top: 			0;
+	padding: 				5px;
+	border: 				1px solid lightslategray;
+	border-radius: 			5px;
+}
+article figure img {
+	width: 					100%;
+}
+article figcaption {
+	font-size: 				90%;
+	text-align: 			left;
+}
+
+/* *** Aside *** */
+aside {
+	float: 					left;
+	width: 					25%;
+	padding: 				0 0 0 1em;
+}
+aside section a {
+	display: 				block;
+	padding: 				0.75em;
+	border-bottom: 			1px solid #eee;
+	text-decoration: 		none;
+	color: 					orangered;
+}
+aside section a:hover {
+	background-color: 		antiquewhite;
+	color: 					midnightblue;
+	border-left:			5px solid brown;
+}
+aside h2 {
+	padding: 				3em 0 0 0;
+	color: 					lightslategray;
+	font-family:			Lobster, Times, "Times New Roman", serif;
+	font-size: 				2em;
+}
+
+/* *** Headings *** */
+h2 {
+	margin: 				10px 0 5px 0;
+	padding:				0;
+	color:					midnightblue;
+}
+h3 {
+	margin: 				0;
+	color: 					lightslategray;
+	font-size:				0.75em;
+}
+
+/* *** Footer *** */
+footer {
+	font-size: 				0.75em;
+	
+}
+
+@media all and (min-width: 1024px) and (max-width: 1600px) { 
+	.wrapper {
+		width: 					75%;
+	}	
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) { 
+	body {
+		font-size: 				1.25em;
+		line-height:			1.3em;
+	}
+	.wrapper {
+		width: 					95%;
+	}
+	nav li {
+		line-height: 			1.5em;
+	}
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) { 
+	.wrapper {
+		width: 					98%;
+	}
+	
+	section.blog {
+		clear:					both;
+		width: 					98%;
+		border-right: 			none;
+		padding-right:			0;
+	}
+	article figure {
+		width: 					480px;
+	}
+	aside {
+		clear:					both;
+		width: 					97%;
+		padding: 				0 0 0 1em;
+		text-align: 			center;
+	}
+	aside section a {
+		border-bottom: 			1px dashed midnightblue;
+	}
+	aside section a:hover {
+		border-right:			5px solid brown;
+	}
+	aside h2 {
+		padding: 				0.5em 0 0 0;
+	}
+}
+
+@media all and (max-width: 480px) {
+	.wrapper {
+		width:					100%;
+		margin: 				0 auto;
+		border:					none;
+	}
+	header {
+		height: 				11.25em;
+	}
+	header h1 {
+		height:					1em;
+		margin-bottom:			0.75em;
+		padding-top:			0.25em;
+		font-size:				1.5em;
+	}
+	nav {
+		height: 				8.25em;
+	}
+	footer {
+		height: 				2.25em;
+	}
+	nav ul {
+		margin: 				0;
+		padding: 				0;
+	}
+	nav li {
+		display: 				block;
+		border-right:			none;
+		border-bottom:			1px dashed midnightblue;
+		line-height: 			2em;
+		padding-left: 			0;
+		padding-right:			0;
+	}
+	nav li:first-child {
+		border-top:			1px dashed midnightblue;
+	}
+	nav li a {
+		display: 				block;
+		padding: 				0 0.25em;
+	}
+	nav li a:hover, nav li a.aOn {
+		background-color: 		white;
+		border-top-left-radius: 0;
+		border-top-right-radius:0;
+		box-shadow: 			none;
+	}
+	
+	/* *** Section *** */
+	section.blog {
+		clear:					both;
+		width: 					100%;
+		border-right: 			none;
+		padding-right:			0;
+	}
+	section .h2Top {
+		margin: 				1em 0 0 0;
+		font-size: 				1.5em;
+		text-align:				center;
+	}
+	
+	/* *** Article *** */
+	article {
+		padding: 				1em;
+		width:					90%;
+	}
+	article hgroup {
+		clear:					both;
+		margin-top: 			1em;
+	}
+	article p:first-letter {
+		padding: 				10px 5px 0 0;
+		font-size: 				4em;
+	}
+	article figure {
+		clear:					both;
+		width: 					95%;
+		margin: 				0;
+		margin-bottom:			1em;
+		padding: 				5px;
+		border: 				1px solid lightslategray;
+		border-radius: 			10px;
+	}
+	article figure img {
+		border-radius: 			10px;
+	}
+	/* *** Aside *** */
+	aside {
+		clear:					both;
+		width: 					100%;
+		padding: 				0;
+		text-align:				center;
+	}
+	aside section a {
+		border-bottom:			1px dashed midnightblue;
+	}
+	aside section a:hover {
+		border-right:			5px solid brown;
+	}
+	aside h2 {
+		padding: 				0.25em 0 0 0;
+	}
+}
+
+/*
+	Name: V Campos <vmc@vmcink.net>
+	Date: 2017-02-01
+	Project: The Marvel Blog
+	Description: An HTML5 and CSS3 project
+*/
